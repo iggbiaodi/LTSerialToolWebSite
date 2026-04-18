@@ -208,7 +208,7 @@
                             </svg>
                                     Download for macOS
                                 </button>
-                                <button type="button" class="link-button dlink" data-os="win" id="download-buttons-win" onclick="downloadWindowsVersion()">
+                                <button type="button" class="link-button" id="download-buttons-win" onclick="return downloadWindowsVersion(event)">
                                     <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg" height="88" width="88">
                                         <path
                                                 d="m0 12.402 35.687-4.86.016 34.423-35.67.203zm35.67 33.529.028 34.453L.028 75.48.026 45.7zm4.326-39.025L87.314 0v41.527l-47.318.376zm47.329 39.349-.011 41.34-47.318-6.678-.066-34.739z"
@@ -217,24 +217,55 @@
                                     下载用于 Windows 的版本
                                 </button>
                                 <script>
-                                    function downloadWindowsVersion() {
-                                        // GitHub Release 下载地址（Windows 版本）
-                                        var downloadUrl = 'https://github.com/iggbiaodi/LTSerialTools/releases/latest/download/LTSerialTool-windows.zip';
-                                        var repoUrl = 'https://github.com/iggbiaodi/LTSerialTools';
+                                    
+                                    async function downloadWindowsVersion(event) {
+                                        if (event) {
+                                            event.preventDefault();
+                                            event.stopPropagation();
+                                        }
 
-                                        // 创建隐藏的 iframe 尝试下载
-                                        var iframe = document.createElement('iframe');
-                                        iframe.style.display = 'none';
-                                        iframe.src = downloadUrl;
-                                        document.body.appendChild(iframe);
+                                        var repo = 'iggbiaodi/LTSerialTools';
+                                        var latestReleaseApiUrl = 'https://api.github.com/repos/' + repo + '/releases/latest';
+                                        var releasesPageUrl = 'https://github.com/' + repo + '/releases';
 
-                                        // 设置超时，如果下载没有触发跳转，则打开仓库页面
-                                        setTimeout(function() {
-                                            // 检查是否还在当前页面（下载未开始）
-                                            document.body.removeChild(iframe);
-                                            // 如果下载没有自动开始，跳转到仓库页面
-                                            window.open(repoUrl, '_blank');
-                                        }, 3000);
+                                        function openReleasesPage(url) {
+                                            var releaseWindow = window.open(url, '_blank', 'noopener');
+                                            if (!releaseWindow) {
+                                                window.location.href = url;
+                                            }
+                                        }
+
+                                        try {
+                                            var response = await fetch(latestReleaseApiUrl, {
+                                                headers: {
+                                                    'Accept': 'application/vnd.github+json'
+                                                }
+                                            });
+
+                                            if (!response.ok) {
+                                                throw new Error('Failed to fetch latest release: ' + response.status);
+                                            }
+
+                                            var release = await response.json();
+                                            var assets = Array.isArray(release.assets) ? release.assets : [];
+                                            var downloadAsset = assets.find(function(asset) {
+                                                return asset && typeof asset.name === 'string' && /\.zip$/i.test(asset.name);
+                                            }) || assets.find(function(asset) {
+                                                return asset && typeof asset.name === 'string' && /\.exe$/i.test(asset.name);
+                                            });
+
+                                            if (downloadAsset && downloadAsset.browser_download_url) {
+                                                window.location.href = downloadAsset.browser_download_url;
+                                                return false;
+                                            }
+
+                                            openReleasesPage(release.html_url || releasesPageUrl);
+                                        } catch (error) {
+                                            console.error('Failed to download latest Windows release.', error);
+                                            openReleasesPage(releasesPageUrl);
+                                        }
+
+                                        return false;
                                     }
                                 </script>
                                 <div class="linux">
@@ -269,7 +300,7 @@
                             </div>
                         </div>
                         <p id="download-matrix-label" class="hero-alt-download-links">
-                            <a href="docs.html" rel="noopener" id="download-buttons-docs">使用文档</a>, <a href="https://github.com/yourusername/LTSerialTool/releases" target="_blank" rel="noopener" id="download-buttons-github">GitHub 发布页</a>,
+                            <a href="docs.html" rel="noopener" id="download-buttons-docs">使用文档</a>, <a href="https://github.com/iggbiaodi/LTSerialTools" target="_blank" rel="noopener" id="download-buttons-github">GitHub 发布页</a>,
                             或 <a href="Download.html">查看所有版本</a>
                         </p>
                         <p class="terms">
