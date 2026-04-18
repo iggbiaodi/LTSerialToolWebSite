@@ -208,7 +208,7 @@
                             </svg>
                                     Download for macOS
                                 </button>
-                                <button type="button" class="link-button dlink" data-os="win" id="download-buttons-win">
+                                <button type="button" class="link-button dlink" data-os="win" id="download-buttons-win" onclick="downloadWindowsVersion()">
                                     <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg" height="88" width="88">
                                         <path
                                                 d="m0 12.402 35.687-4.86.016 34.423-35.67.203zm35.67 33.529.028 34.453L.028 75.48.026 45.7zm4.326-39.025L87.314 0v41.527l-47.318.376zm47.329 39.349-.011 41.34-47.318-6.678-.066-34.739z"
@@ -216,6 +216,27 @@
                                     </svg>
                                     下载用于 Windows 的版本
                                 </button>
+                                <script>
+                                    function downloadWindowsVersion() {
+                                        // GitHub Release 下载地址（Windows 版本）
+                                        var downloadUrl = 'https://github.com/iggbiaodi/LTSerialTools/releases/latest/download/LTSerialTool-windows.zip';
+                                        var repoUrl = 'https://github.com/iggbiaodi/LTSerialTools';
+
+                                        // 创建隐藏的 iframe 尝试下载
+                                        var iframe = document.createElement('iframe');
+                                        iframe.style.display = 'none';
+                                        iframe.src = downloadUrl;
+                                        document.body.appendChild(iframe);
+
+                                        // 设置超时，如果下载没有触发跳转，则打开仓库页面
+                                        setTimeout(function() {
+                                            // 检查是否还在当前页面（下载未开始）
+                                            document.body.removeChild(iframe);
+                                            // 如果下载没有自动开始，跳转到仓库页面
+                                            window.open(repoUrl, '_blank');
+                                        }, 3000);
+                                    }
+                                </script>
                                 <div class="linux">
                                     <button type="button" class="link-button dlink deb-btn" data-os="linux64_deb"
                                             id="download-linux64_deb"
