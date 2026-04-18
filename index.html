@@ -17,12 +17,12 @@
     <meta name="twitter:site" content="@code"/>
 
     <meta name="description"
-          content="LTSerialTool redefines AI-powered coding with GitHub Copilot for building and debugging modern web and cloud applications. LTSerialTool is free and available on your favorite platform - Linux, macOS, and Windows."/>
+          content="LTSerialTool 是一款简洁优雅的跨平台串口调试工具，专为嵌入式开发和硬件调试场景设计。支持 Windows、Linux、macOS 跨平台运行。"/>
     <meta name="msvalidate.01" content="D7003A550372D1205E5408F00BF1923B"/>
     <!-- Twitter and Facebook OpenGraph Metadata-->
-    <meta property="og:title" content="LTSerialTool - Code Editing. Redefined"/>
+    <meta property="og:title" content="LTSerialTool - 简洁优雅的跨平台串口调试工具"/>
     <meta property="og:description"
-          content="LTSerialTool redefines AI-powered coding with GitHub Copilot for building and debugging modern web and cloud applications. LTSerialTool is free and available on your favorite platform - Linux, macOS, and Windows."/>
+          content="LTSerialTool 是一款简洁优雅的跨平台串口调试工具，专为嵌入式开发和硬件调试场景设计。支持 Windows、Linux、macOS 跨平台运行。"/>
     <meta property="og:image" content="opengraphimg/opengraph-home.png"/>
     <meta property="og:url" content="index.html"/>
     <link href="index.html" rel="canonical"/>
@@ -35,7 +35,7 @@
     <link rel="shortcut icon" href="assets/favicon.ico" sizes="128x128"/>
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
-    <title>LTSerialTool - 开放源代码的串口工具</title>
+    <title>LTSerialTool - 简洁优雅的跨平台串口调试工具</title>
 
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="dist/v2/style.css">
@@ -129,10 +129,9 @@
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-left">
                             <li><a id="nav-docs" href="docs.html">文档</a></li>
-                            <li><a id="nav-updates" href="updates/v1_104.html">更新</a></li>
-                            <li><a id="nav-blogs" href="blogs.html">博客</a></li>
-                            <li><a id="nav-extend" href="api.html">开放API</a></li>
-                            <li><a id="nav-faqs" href="docs/supporting/faq.html">常见疑问</a></li>
+                            <li><a id="nav-features" href="features.html">功能特性</a></li>
+                            <li><a id="nav-download" href="Download.html">下载</a></li>
+                            <li><a id="nav-faqs" href="faq.html">常见问题</a></li>
                             <li class='search visible-xs visible-sm'
                             ><a href="Search.html">搜索</a></li>
                         </ul>
@@ -185,8 +184,7 @@
     </div>
     <div data-announcement-version="2025-08-25-dev-days" class="updates-banner js-hidden  ">
         <div class="container">
-            <p class="message">Join a <a href="dev-days.html" id="banner-link-dev-days">LTSerialTool Dev Days event</a> near
-                you to learn about AI-assisted development in LTSerialTool.</p>
+            <p class="message">🎉 LTSerialTool v1.0.0 正式发布！ <a href="Download.html" id="banner-link-download">立即下载</a>体验全新串口调试功能。</p>
         </div>
         <div tabindex="0" role="button" title="Dismiss this update" class="dismiss-btn" id="banner-dismiss-btn"><span
                 class="sr-only">Dismiss this update</span><span aria-hidden="true" class="glyph-icon"></span></div>
@@ -196,7 +194,7 @@
         <div class="container home">
             <section class="hero-content col-sm-12">
                 <div class="hero-text">
-                    <h1>开放源代码的<br>串口工具</h1>
+                    <h1>简洁优雅的<br>跨平台串口调试工具</h1>
                     <div class="download-content-wrapper">
                         <div id="download-buttons" class="download-hero alt-downloads">
                             <div class="primary-buttons">
@@ -245,58 +243,29 @@
                                               d="M70.912 99.317a6.223 6.223 0 0 0 4.96-.19l20.589-9.907A6.25 6.25 0 0 0 100 83.587V16.413a6.25 6.25 0 0 0-3.54-5.632L75.874.874a6.226 6.226 0 0 0-7.104 1.21L29.355 38.04 12.187 25.01a4.162 4.162 0 0 0-5.318.236l-5.506 5.009a4.168 4.168 0 0 0-.004 6.162L16.247 50 1.36 63.583a4.168 4.168 0 0 0 .004 6.162l5.506 5.01a4.162 4.162 0 0 0 5.318.236l17.168-13.032L68.77 97.917a6.217 6.217 0 0 0 2.143 1.4ZM75.015 27.3 45.11 50l29.906 22.701V27.3Z"
                                               clip-rule="evenodd"/>
                                     </svg>
-                                    Download LTSerialTool
+                                    下载 LTSerialTool
                                 </a>
                             </div>
                         </div>
                         <p id="download-matrix-label" class="hero-alt-download-links">
-                            <a href="https://vscode.dev/" target="_blank" rel="noopener"
-                               title="For quick code edits locally or remotely on GitHub and Azure Repos."
-                               id="download-buttons-web">网页</a>, <a href="insiders/index.html"
-                                                                     id="download-buttons-insiders">预览体验版</a>,
-                            或 <a href="Download.html">其他平台版本</a>
+                            <a href="docs.html" rel="noopener" id="download-buttons-docs">使用文档</a>, <a href="https://github.com/yourusername/LTSerialTool/releases" target="_blank" rel="noopener" id="download-buttons-github">GitHub 发布页</a>,
+                            或 <a href="Download.html">查看所有版本</a>
                         </p>
                         <p class="terms">
-                            使用 LTSerialTool, 即表示您同意其 <span class="wrap-together"><a href="license.html"
+                            LTSerialTool 是基于 <span class="wrap-together"><a href="https://github.com/yourusername/LTSerialTool/blob/main/LICENSE"
                                                                                               target="_blank"
                                                                                               rel="noopener"
-                                                                                              title="View the LTSerialTool license.">许可证</a> 和 <a
-                                href="https://go.microsoft.com/fwlink/?LinkId=521839" target="_blank" rel="noopener"
-                                title="View the Microsoft privacy statement.">隐私说明</a>.</span>
+                                                                                              title="MIT License">MIT 许可证</a> 开源的免费软件</span>
                         </p>
                     </div>
                 </div>
                 <div class="hero-video-container" role="img"
-                     aria-label="A demonstration animation of LTSerialTool using Copilot Chat, Copilot Edits, Inline Chat, and AI-assisted commit message generation to create and refine a Wordle clone web app built with React and Vite.">
-                    <video width="1008" height="639" id="hero-video-dark" class="hero-video dark"
-                           poster="assets/home/hero-poster-dark.webp" playsinline autoplay muted>
-                        <source src="assets/home/hero-dark-sm.webm" type="video/webm" media="(max-width: 991px)">
-                        <source src="assets/home/hero-dark-sm.mp4" type="video/mp4" media="(max-width: 991px)">
-                        <source src="assets/home/hero-dark-lg.webm" type="video/webm">
-                        <source src="assets/home/hero-dark-lg.mp4" type="video/mp4">
-                    </video>
-                    <video width="1008" height="639" id="hero-video-light" class="hero-video light"
-                           poster="assets/home/hero-poster-light.webp" playsinline autoplay muted>
-                        <source src="assets/home/hero-light-sm.webm" type="video/webm" media="(max-width: 991px)">
-                        <source src="assets/home/hero-light-sm.mp4" type="video/mp4" media="(max-width: 991px)">
-                        <source src="assets/home/hero-light-lg.webm" type="video/webm">
-                        <source src="assets/home/hero-light-lg.mp4" type="video/mp4">
-                    </video>
+                     aria-label="LTSerialTool 串口调试工具主界面展示，支持发送模式和接收模式">
                     <img width="1008" height="639" id="hero-poster-dark" class="hero-poster dark"
-                         src="assets/home/hero-poster-dark.webp" alt="LTSerialTool interface showing AI-powered features">
+                         src="assets/home/hero-poster-dark.webp" alt="LTSerialTool 串口调试工具主界面">
                     <img width="1008" height="639" id="hero-poster-light" class="hero-poster light"
-                         src="assets/home/hero-poster-light.webp" alt="LTSerialTool interface showing AI-powered features">
+                         src="assets/home/hero-poster-light.webp" alt="LTSerialTool 串口调试工具主界面">
                 </div>
-                <div class="video-control">
-                    <button id="hero-video-button" aria-pressed="false"
-                            aria-label="Hero animation is currently playing. Click to pause.">
-                        Pause
-                    </button>
-                </div>
-                <div class="canvas-container">
-                    <canvas id="hero-canvas"></canvas>
-                </div>
-                <div id="static-binary-grid"></div>
             </section>
         </div>
 
@@ -305,50 +274,43 @@
                 <div class="three-col-content">
                     <div class="col-sm-4 col-lg-4">
                         <div class="three-col-card">
-                            <h2>Any model for any team</h2>
-                            <p>Use AI models like Claude Sonnet out of the box, or bring your own key to access models
-                                from
-                                Azure,
-                                Anthropic, Google, Ollama, OpenAI, and OpenRouter.</p>
+                            <h2>双模式数据展示</h2>
+                            <p>支持 HEX/ASCII 两种模式实时显示接收数据，自动识别换行符，支持时间戳和 RX/TX 标识，便于调试分析。</p>
                             <div>
                                 <img src="assets/home/choose-model-dark.webp" class="swimlane-image dark" loading="lazy"
-                                     alt="Dropdown menu in GitHub Copilot Chat displaying AI model options: 'Claude 3.7 Sonnet' selected, with other options like 'Claude 3.5 Sonnet', 'GPT 4.5', 'GPT 4o', and 'Manage Models...'">
+                                     alt="LTSerialTool 双模式数据展示界面，支持 HEX 和 ASCII 模式切换">
                                 <img src="assets/home/choose-model-light.webp" class="swimlane-image light"
                                      loading="lazy"
-                                     alt="Dropdown menu in GitHub Copilot Chat displaying AI model options: 'Claude 3.7 Sonnet' selected, with other options like 'Claude 3.5 Sonnet', 'GPT 4.5', 'GPT 4o', and 'Manage Models...'">
+                                     alt="LTSerialTool 双模式数据展示界面，支持 HEX 和 ASCII 模式切换">
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm-4 col-lg-4">
                         <div class="three-col-card">
-                            <h2>An expert on your codebase</h2>
-                            <p>Your codebase is indexed locally and remotely (on GitHub) to understand what's relevant,
-                                enabling
-                                fast, context-aware interactions.</p>
+                            <h2>智能串口连接</h2>
+                            <p>自动检测可用串口，支持多种波特率、数据位、校验位配置。一键连接，稳定可靠，支持 Windows、Linux、macOS 跨平台运行。</p>
                             <div>
                                 <img src="assets/home/an-expert-on-your-codebase-dark.webp" class="swimlane-image dark"
                                      loading="lazy"
-                                     alt="A LTSerialTool chat prompt. The prompt includes codebase and file context by writing #codebase and #file:HistoryView.swift in the message.">
+                                     alt="LTSerialTool 串口连接配置界面，展示波特率和串口参数设置">
                                 <img src="assets/home/an-expert-on-your-codebase-light.webp"
                                      class="swimlane-image light"
                                      loading="lazy"
-                                     alt="A LTSerialTool chat prompt. The prompt includes codebase and file context by writing #codebase and #file:HistoryView.swift in the message.">
+                                     alt="LTSerialTool 串口连接配置界面，展示波特率和串口参数设置">
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4 col-lg-4">
                         <div class="three-col-card">
-                            <h2>AI that works the way your team does</h2>
-                            <p>Personalize interactions using custom instructions and reusable prompt files tailored to
-                                your
-                                workflows, tools, and projects.</p>
+                            <h2>指令管理系统</h2>
+                            <p>支持常用指令的增删改查，可保存历史发送记录，支持 TXT/HEX 格式发送，并可配置发送间隔时间，提高调试效率。</p>
                             <div>
                                 <img src="assets/home/instructions-dark.webp" class="swimlane-image dark" loading="lazy"
-                                     alt="Settings JSON for copilot instructions, the first set to `use React functional components', then including another file for extra instructions 'code-style.md'.">
+                                     alt="LTSerialTool 指令管理界面，展示常用指令列表和快捷发送功能">
                                 <img src="assets/home/instructions-light.webp" class="swimlane-image light"
                                      loading="lazy"
-                                     alt="Settings JSON for copilot instructions, the first set to `use React functional components', then including another file for extra instructions 'code-style.md'.">
+                                     alt="LTSerialTool 指令管理界面，展示常用指令列表和快捷发送功能">
                             </div>
                         </div>
                     </div>
@@ -358,13 +320,11 @@
             <section class="swimlane row">
                 <div class="copilot-free-banner">
                     <div class="col-sm-6 col-lg-6">
-                        <h2>Use AI features in LTSerialTool for free</h2>
+                        <h2>开源免费，开箱即用</h2>
                     </div>
                     <div class="col-sm-6 col-lg-6">
-                        <p>No trial. No credit card required. Just your GitHub account.</p>
-                        <a class="link-button secondary copilot-deep-link"
-                           href="vscode://GitHub.Copilot-Chat/chat?mode=agent&referrer=vscode-agentmainbanner"
-                           rel="noopener">Try free</a>
+                        <p>基于 MIT 许可证开源，完全免费使用。内置 JRE，无需额外安装 Java 环境。</p>
+                        <a class="link-button secondary" href="Download.html" rel="noopener">立即下载</a>
                     </div>
                 </div>
             </section>
@@ -376,16 +336,15 @@
                     <div class="col-sm-6 col-lg-4">
                         <div class="value-prop-intro">
                             <h2>接收模式</h2>
-                            <p>LTSerialTool 默认启用两个串口接收界面，支持自定义高亮关键字，并且可以自定义高亮颜色</p>
-                            <a href="docs/copilot/ai-powered-suggestions.html#_next-edit-suggestions"
-                               rel="noopener">Code with AI-powered suggestions</a>
+                            <p>LTSerialTool 默认启用双窗口接收界面，支持 HEX/ASCII 实时显示，可添加时间戳和 RX/TX 标识，便于调试分析。支持自定义高亮关键字和颜色，让重要数据一目了然。</p>
+                            <a href="docs/receive-mode.html" rel="noopener">了解接收模式功能</a>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-8">
                         <img src="assets/home/swimlane-nes-dark.webp" class="swimlane-image dark" loading="lazy"
-                             alt="Code editor showing a JavaScript file post.js. It defines a render method that renders a social media post by calling an external API. 接收模式 is suggesting how to complete the implementation.">
+                             alt="LTSerialTool 接收模式界面，展示双窗口数据接收和 HEX/ASCII 显示">
                         <img src="assets/home/swimlane-nes-light.webp" class="swimlane-image light" loading="lazy"
-                             alt="Code editor showing a JavaScript file post.js. It defines a render method that renders a social media post by calling an external API. 接收模式 is suggesting how to complete the implementation.">
+                             alt="LTSerialTool 接收模式界面，展示双窗口数据接收和 HEX/ASCII 显示">
                     </div>
                 </div>
             </section>
@@ -395,22 +354,15 @@
                     <div class="col-sm-6 col-lg-4">
                         <div class="secondary-value-prop">
                             <h2>发送模式</h2>
-                            <p>Tackle complex, multi-step tasks. 发送模式 reads your codebase, suggests edits across
-                                files,
-                                runs terminal commands, and responds to compile or test failures — all in a loop until
-                                the job
-                                is done. Further refine agent mode to fit your team's workflows with LTSerialTool extensions
-                                and
-                                Model Context Protocol (MCP) servers.</p>
-                            <a href="docs/copilot/chat/chat-agent-mode.html" rel="noopener">Build with
-                                agent mode</a>
+                            <p>支持 TXT/HEX 格式数据发送，可配置发送间隔时间实现定时发送。内置指令管理系统，支持常用指令的增删改查，一键快速发送历史指令，大幅提升调试效率。</p>
+                            <a href="docs/send-mode.html" rel="noopener">了解发送模式功能</a>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-8">
                         <img src="assets/home/swimlane-chat-dark.webp" class="swimlane-image dark" loading="lazy"
-                             alt="LTSerialTool window showing a code editor with projects.tsx open, alongside a chat panel in 发送模式. The chat discusses an open issue from GitHub.">
+                             alt="LTSerialTool 发送模式界面，展示数据输入框和指令管理列表">
                         <img src="assets/home/swimlane-chat-light.webp" class="swimlane-image light" loading="lazy"
-                             alt="LTSerialTool window showing a code editor with projects.tsx open, alongside a chat panel in 发送模式. The chat discusses an open issue from GitHub.">
+                             alt="LTSerialTool 发送模式界面，展示数据输入框和指令管理列表">
                     </div>
                 </div>
             </section>
@@ -418,111 +370,74 @@
             <section class="extensions-container row">
                 <div class="extensions-container-content row">
                     <div class="col-sm-6 col-lg-4">
-                        <h2>Code with extensions</h2>
-                        <p>Customize LTSerialTool with AI-powered functionality from extensions and Model Context Protocol
-                            servers to
-                            use in Chat. Or, <a
-                                    href="api/extension-guides/ai/ai-extensibility-overview.html">build your own
-                                extension</a> to power your team's unique scenarios.
-                        </p>
+                        <h2>丰富的功能特性</h2>
+                        <p>LTSerialTool 提供完整的串口调试功能，包括数据收发、日志记录、指令管理、快捷键配置等。基于 JavaFX 开发，界面简洁美观，操作流畅便捷。</p>
                     </div>
                     <div class="col-sm-6 col-lg-8">
                         <div class="extensions-grid-container">
                             <div class="extensions-grid">
-                                <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python"
-                                   target="_blank"
-                                   rel="noopener" class="extension-tile">
-                                    <img src="assets/images/python-extension.png" loading="lazy"
-                                         alt="Python extension icon">
+                                <div class="extension-tile">
                                     <div class="extension-tile-details">
-                                        <h3>Python</h3>
-                                        <p>Adds rich language support for Python</p>
+                                        <h3>📊 日志记录</h3>
+                                        <p>自动保存通信日志到本地文件，支持按日期分类存储，方便后续分析</p>
                                     </div>
-                                </a>
-                                <a href="https://marketplace.visualstudio.com/items?itemName=Stripe.vscode-stripe"
-                                   target="_blank" rel="noopener" class="extension-tile">
-                                    <img src="assets/images/stripe-extension.png" loading="lazy"
-                                         alt="Stripe extension icon">
+                                </div>
+                                <div class="extension-tile">
                                     <div class="extension-tile-details">
-                                        <h3>Stripe</h3>
-                                        <p>Build, test, and use Stripe inside your editor</p>
+                                        <h3>⌨️ 快捷键支持</h3>
+                                        <p>支持发送快捷键配置，一键快速发送常用指令，提高调试效率</p>
                                     </div>
-                                </a>
-                                <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools"
-                                   target="_blank"
-                                   rel="noopener" class="extension-tile">
-                                    <img src="assets/images/c-extension.png" loading="lazy" alt="C/C extension icon">
+                                </div>
+                                <div class="extension-tile">
                                     <div class="extension-tile-details">
-                                        <h3>C/C++</h3>
-                                        <p>Adds rich language support for C/C++</p>
+                                        <h3>📝 指令管理</h3>
+                                        <p>支持常用指令的增删改查，可保存历史发送记录，快速调用</p>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                             <div class="extensions-grid">
-                                <a href="https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter"
-                                   target="_blank"
-                                   rel="noopener" class="extension-tile">
-                                    <img src="assets/images/jupyter-extension.png" loading="lazy"
-                                         alt="Jupyter extension icon">
+                                <div class="extension-tile">
                                     <div class="extension-tile-details">
-                                        <h3>Jupyter</h3>
-                                        <p>Language support for Jupyter Notebooks</p>
+                                        <h3>🔌 串口配置</h3>
+                                        <p>支持多种波特率、数据位、校验位、停止位配置，满足不同设备需求</p>
                                     </div>
-                                </a>
-                                <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens"
-                                   target="_blank"
-                                   rel="noopener" class="extension-tile">
-                                    <img src="assets/images/gitlens-extension.png" loading="lazy"
-                                         alt="GitLens extension icon">
+                                </div>
+                                <div class="extension-tile">
                                     <div class="extension-tile-details">
-                                        <h3>GitLens</h3>
-                                        <p>Supercharge your Git experience</p>
+                                        <h3>🎨 主题切换</h3>
+                                        <p>支持明亮/暗黑主题切换，提供样式文件模板，可自定义 UI 风格</p>
                                     </div>
-                                </a>
-                                <a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit"
-                                   target="_blank" rel="noopener" class="extension-tile">
-                                    <img src="assets/images/cs-dev-kit-extension.png" loading="lazy"
-                                         alt="C# Dev Kit extension icon">
+                                </div>
+                                <div class="extension-tile">
                                     <div class="extension-tile-details">
-                                        <h3>C# Dev Kit</h3>
-                                        <p>Powerful tools for your C# environment</p>
+                                        <h3>🔍 数据高亮</h3>
+                                        <p>支持自定义高亮关键字和颜色，让重要数据在接收窗口中一目了然</p>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                             <div class="extensions-grid">
-                                <a href="https://marketplace.visualstudio.com/items?itemName=mongodb.mongodb-vscode"
-                                   target="_blank" rel="noopener" class="extension-tile">
-                                    <img src="assets/images/mongodb-extension.png" loading="lazy"
-                                         alt="MongoDB extension icon">
+                                <div class="extension-tile">
                                     <div class="extension-tile-details">
-                                        <h3>MongoDB</h3>
-                                        <p>Extension for the @MongoDB agent</p>
+                                        <h3>📤 定时发送</h3>
+                                        <p>支持配置发送间隔时间，实现定时循环发送，方便压力测试</p>
                                     </div>
-                                </a>
-                                <a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azure-github-copilot"
-                                   target="_blank" rel="noopener" class="extension-tile">
-                                    <img src="assets/images/azure.png" loading="lazy"
-                                         alt="GitHub Copilot for Azure extension icon">
+                                </div>
+                                <div class="extension-tile">
                                     <div class="extension-tile-details">
-                                        <h3>GitHub Copilot for Azure</h3>
-                                        <p>Streamline the process of developing for Azure</p>
+                                        <h3>🌐 跨平台</h3>
+                                        <p>支持 Windows、Linux、macOS 三大平台，一次编写，处处运行</p>
                                     </div>
-                                </a>
-                                <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack"
-                                   target="_blank" rel="noopener" class="extension-tile">
-                                    <img src="assets/images/remote-extension.png" loading="lazy"
-                                         alt="Remote Development extension icon">
+                                </div>
+                                <div class="extension-tile">
                                     <div class="extension-tile-details">
-                                        <h3>Remote Development</h3>
-                                        <p>Open folders in a container on a remote machine</p>
+                                        <h3>⚡ 高性能</h3>
+                                        <p>基于 JavaFX 硬件加速渲染，流畅处理高速数据收发</p>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <div class="extensions-grid-caption">
-                            <p>View 75k+ extensions in the <a href="https://marketplace.visualstudio.com/vscode"
-                                                              rel="noopener"
-                                                              target="_blank">Extension Marketplace</a></p>
+                            <p>查看完整功能列表，请访问 <a href="features.html" rel="noopener">功能特性页面</a></p>
                         </div>
                     </div>
                 </div>
@@ -532,29 +447,24 @@
                 <div class="swimlane-content">
                     <div class="col-sm-6 col-lg-4">
                         <div class="value-prop-intro">
-                            <h2>Code in any language</h2>
-                            <p>LTSerialTool supports almost every major programming language. Several ship in the box, like
-                                JavaScript,
-                                TypeScript, CSS, and HTML, but extensions for others can be found in the LTSerialTool
-                                Marketplace.
+                            <h2>灵活的数据格式支持</h2>
+                            <p>支持 ASCII 文本和十六进制（HEX）两种数据格式收发，满足不同设备的通信需求。支持自动识别换行符、添加时间戳，让调试更加高效便捷。
                             </p>
                         </div>
                     </div>
                     <div class="languages col-sm-6 col-lg-8">
-                        <div><img src="assets/home/language-js.png" alt="JavaScript icon"><code>JavaScript</code></div>
-                        <div><img src="assets/home/language-ts.png" alt="TypeScript icon"><code>TypeScript</code></div>
-                        <div><img src="assets/home/language-python.png" alt="Python icon"><code>Python</code></div>
-                        <div><img src="assets/home/language-cs.png" alt="C# icon"><code>C#</code></div>
-                        <div><img src="assets/home/language-cpp.png" alt="C++ icon"><code>C++</code></div>
-                        <div><img src="assets/home/language-html.png" alt="HTML icon"><code>HTML</code></div>
-                        <div><img src="assets/home/language-java.png" alt="Java icon"><code>Java</code></div>
-                        <div><img src="assets/home/language-json.png" alt="JSON icon"><code>JSON</code></div>
-                        <div><img src="assets/home/language-php.png" alt="PHP icon"><code>PHP</code></div>
-                        <div><img src="assets/home/language-markdown.png" alt="Markdown icon"><code>Markdown</code>
-                        </div>
-                        <div><img src="assets/home/language-powershell.png"
-                                  alt="Powershell icon"><code>Powershell</code></div>
-                        <div><img src="assets/home/language-yaml.png" alt="YAML icon"><code>YAML</code></div>
+                        <div><code>ASCII</code></div>
+                        <div><code>HEX</code></div>
+                        <div><code>TXT</code></div>
+                        <div><code>时间戳</code></div>
+                        <div><code>RX/TX 标识</code></div>
+                        <div><code>换行符</code></div>
+                        <div><code>波特率配置</code></div>
+                        <div><code>数据位</code></div>
+                        <div><code>校验位</code></div>
+                        <div><code>停止位</code></div>
+                        <div><code>自动重连</code></div>
+                        <div><code>日志导出</code></div>
                     </div>
                 </div>
             </section>
@@ -563,31 +473,27 @@
                 <div class="swimlane-content">
                     <div class="col-sm-6 col-lg-4">
                         <div class="value-prop-intro">
-                            <h2>自定义指令</h2>
-                            <p>可以添加自定义指令用于调试，支持TXT，HEX格式，并允许自定义发送间隔时间</p>
+                            <h2>指令管理与快捷发送</h2>
+                            <p>强大的指令管理系统，支持常用指令的增删改查。可保存历史发送记录，支持 TXT/HEX 格式，配置发送间隔时间实现定时发送。配合快捷键配置，一键快速发送，大幅提升调试效率。</p>
                         </div>
                         <div class="secondary-value-prop">
-                            <p><a href="docs/configure/themes.html" rel="noopener">Color themes</a>
-                                let you modify the colors in LTSerialTool's user interface to suit your preferences and work
-                                environment.</p>
+                            <p><a href="docs/command-manager.html" rel="noopener">指令管理器</a>
+                                支持创建、编辑、删除常用指令，可为每个指令设置名称、内容和格式。</p>
                         </div>
                         <div class="secondary-value-prop">
-                            <p><a href="docs/configure/settings.html#_settings-sync" rel="noopener"
-                                  class="value-prop-bold">Settings Sync</a> enables you to share your user settings
-                                across
-                                your LTSerialTool instances with the Settings Sync feature.</p>
+                            <p><a href="docs/shortcut-keys.html" rel="noopener"
+                                  class="value-prop-bold">快捷键配置</a> 支持为常用指令绑定快捷键，Ctrl+数字键快速发送，让调试更便捷。</p>
                         </div>
                         <div class="secondary-value-prop">
-                            <p><a href="docs/configure/profiles.html" rel="noopener"
-                                  class="value-prop-bold">Profiles</a> let you create sets of customizations and quickly
-                                switch between them or share them with others.</p>
+                            <p><a href="docs/auto-send.html" rel="noopener"
+                                  class="value-prop-bold">定时发送</a> 支持配置发送间隔时间（毫秒级），实现循环定时发送，方便进行压力测试。</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-8">
                         <img src="assets/home/swimlane-customized.png" class="swimlane-image dark" loading="lazy"
-                             alt="Selecting the GitHub Dark theme with a quick pick">
+                             alt="LTSerialTool 指令管理界面，展示常用指令列表和快捷发送功能">
                         <img src="assets/home/swimlane-customized-light.png" class="swimlane-image light" loading="lazy"
-                             alt="Selecting the GitHub Dark theme with a quick pick">
+                             alt="LTSerialTool 指令管理界面，展示常用指令列表和快捷发送功能">
                     </div>
                 </div>
             </section>
@@ -597,27 +503,21 @@
                     <div class="col-sm-6 col-lg-4">
                         <div class="value-prop-intro">
                             <h2>多主题样式切换</h2>
-                            <p>LTSerialTool 支持多种主题样式切换，并且提供样式文件模板，支持用户自定义样式文件来定制自己独特的UI风格</p>
+                            <p>LTSerialTool 支持明亮/暗黑等多种主题样式切换，基于 AtlantaFX 主题框架，界面简洁美观。同时提供样式文件模板，支持用户自定义 CSS 样式文件来定制独特的 UI 风格。</p>
                         </div>
                         <div class="secondary-value-prop">
-                            <p><a href="docs/sourcecontrol/overview.html" rel="noopener">Built-in
-                                Source Control</a> empowers you with Git support out-of-the-box. Many other source
-                                control
-                                providers are available through extensions.</p>
+                            <p><a href="docs/themes.html" rel="noopener">主题切换</a> 支持一键切换明亮/暗黑主题，适应不同的工作环境和个人偏好。</p>
                         </div>
                         <div class="secondary-value-prop">
-                            <p><a href="docs/remote/codespaces.html" rel="noopener"
-                                  class="value-prop-bold">GitHub Codespaces</a> provides cloud-powered development
-                                environments for any activity - whether it's a long-term project, or a short-term task
-                                like
-                                reviewing a pull request.</p>
+                            <p><a href="docs/custom-theme.html" rel="noopener"
+                                  class="value-prop-bold">自定义样式</a> 提供样式文件模板，用户可编辑 CSS 文件创建个性化主题，打造独特的界面风格。</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-8">
                         <img src="assets/home/swimlane-anywhere.png" class="swimlane-image dark" loading="lazy"
-                             alt="vscode.dev in an Edge browser tab">
+                             alt="LTSerialTool 暗黑主题界面展示">
                         <img src="assets/home/swimlane-anywhere-light.png" class="swimlane-image light" loading="lazy"
-                             alt="vscode.dev in an Edge browser tab">
+                             alt="LTSerialTool 明亮主题界面展示">
                     </div>
                 </div>
             </section>
@@ -634,16 +534,10 @@
     </div>
 </footer>
 <script type="module">
+    // LTSerialTool 主页交互脚本
     document.addEventListener('DOMContentLoaded', () => {
-        const copilotDeepLinks = document.querySelectorAll('.copilot-deep-link');
-        if (copilotDeepLinks.length === 0) {
-            return;
-        }
-        if (window.innerWidth < 992) {
-            for (const link of copilotDeepLinks) {
-                link.href = 'https://aka.ms/vscode-activatecopilotfree';
-            }
-        }
+        // 可以在这里添加主页特定的交互功能
+        console.log('LTSerialTool website loaded');
     });
 </script>
 
@@ -655,48 +549,45 @@
         "@context": "http://schema.org",
         "@type": "SoftwareApplication",
         "name": "LTSerialTool",
-        "softwareVersion": "1.104",
+        "softwareVersion": "1.0.0",
         "offers": {
             "@type": "Offer",
             "price": "0",
             "priceCurrency": "USD"
         },
         "applicationCategory": "DeveloperApplication",
-        "applicationSubCategory": "Text Editor",
-        "alternateName": "LTSerialTool",
-        "datePublished": "2021-11-03",
-        "operatingSystem": "Mac, Linux, Windows",
-        "logo": "https://code.visualstudio.com/assets/apple-touch-icon.png",
-        "screenshot": "https://code.visualstudio.com/assets/home/home-screenshot-win.png",
-        "releaseNotes": "https://code.visualstudio.com/updates",
-        "downloadUrl": "https://code.visualstudio.com/download",
-        "license": "https://code.visualstudio.com/license",
-        "softwareRequirements": "https://code.visualstudio.com/docs/supporting/requirements",
-        "url": "https://code.visualstudio.com",
+        "applicationSubCategory": "Serial Communication Tool",
+        "alternateName": "LT串口调试工具",
+        "datePublished": "2025-01-01",
+        "operatingSystem": "Windows, Linux, macOS",
+        "logo": "https://yourusername.github.io/LTSerialTool/assets/apple-touch-icon.png",
+        "screenshot": "https://yourusername.github.io/LTSerialTool/assets/home/hero-poster-light.webp",
+        "releaseNotes": "https://github.com/yourusername/LTSerialTool/releases",
+        "downloadUrl": "https://github.com/yourusername/LTSerialTool/releases",
+        "license": "https://github.com/yourusername/LTSerialTool/blob/main/LICENSE",
+        "softwareRequirements": "Java 17+",
+        "url": "https://yourusername.github.io/LTSerialTool",
         "author": {
-            "@type": "Organization",
-            "name": "Microsoft"
+            "@type": "Person",
+            "name": "LT~"
         },
         "publisher": {
             "@type": "Organization",
-            "name": "Microsoft"
+            "name": "LTSerialTool"
         },
         "maintainer": {
-            "@type": "Organization",
-            "name": "Microsoft"
+            "@type": "Person",
+            "name": "LT~"
         },
         "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://code.visualstudio.com/Search?q={search_term_string}",
+            "target": "https://yourusername.github.io/LTSerialTool/Search?q={search_term_string}",
             "query-input": "required name=search_term_string"
         },
         "sameAs": [
-            "https://en.wikipedia.org/wiki/Visual_Studio_Code",
-            "https://twitter.com/code",
-            "https://www.youtube.com/code",
-            "https://www.tiktok.com/@vscode",
-            "https://github.com/microsoft/vscode"
-        ]
+            "https://github.com/yourusername/LTSerialTool"
+        ],
+        "description": "LTSerialTool 是一款简洁优雅的跨平台串口调试工具，专为嵌入式开发和硬件调试场景设计。支持 Windows、Linux、macOS 跨平台运行。"
     }
 </script>
 </body>
