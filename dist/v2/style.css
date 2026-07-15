@@ -872,6 +872,12 @@ iframe[name=google_conversion_frame] {
     margin: 0
 }
 
+.navbar .navbar-left,
+.navbar .navbar-right>li:nth-child(2),
+.navbar .navbar-right>li:nth-child(3) {
+    display: none !important
+}
+
 .navbar .navbar-right .link-button {
     color: #fff;
     font-size: 16px;
@@ -2374,7 +2380,7 @@ pre.shiki code span {
 }
 
 .home .hero-poster {
-    display: none;
+    display: block;
     width: 90%;
     height: auto;
     position: absolute;
@@ -3332,6 +3338,14 @@ pre.shiki code span {
     visibility: hidden
 }
 
+.hero-poster.dark {
+    visibility: visible
+}
+
+.hero-poster.light {
+    visibility: hidden
+}
+
 [data-theme=light] .hero-image.light {
     display: flex
 }
@@ -3345,6 +3359,14 @@ pre.shiki code span {
 }
 
 [data-theme=light] .hero-video.dark {
+    visibility: hidden
+}
+
+[data-theme=light] .hero-poster.light {
+    visibility: visible
+}
+
+[data-theme=light] .hero-poster.dark {
     visibility: hidden
 }
 
